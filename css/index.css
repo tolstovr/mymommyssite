@@ -54,9 +54,33 @@ box-shadow: 0 0 0 0 rgba(0,123,255,0)!important;
 }
 
 main {
-    margin: 0px 10px;
+    margin: 0px 5%;
     margin-top: 15px;
 }
+
+.mobile-portfolio {
+    display: none;
+}
+
+.portfolio {
+    display: flex;
+}
+
+@media screen and (max-width: 720px) {
+    .portfolio {
+        display: none;
+    }
+
+    .mobile-portfolio {
+        display: flex;
+    }
+}
+
+.work {
+    justify-content: center !important;
+    margin-bottom: 50px;
+}
+
 
 .mainimage {
     border-radius: 50%;
@@ -64,8 +88,9 @@ main {
     height: 192px;
 }
 
-.offcanvas {
+#offcanvasExample {
     width: 75% !important;
+    max-width: 384px;
 }
 
 .rowflex {
@@ -109,11 +134,6 @@ figure {
 .rowflex > a > .img:hover {
     transition: 0.25s;
     filter: brightness(75%);
-}
-
-.work {
-    justify-content: center !important;
-    margin-bottom: 50px;
 }
 
 .testimonial > img {
